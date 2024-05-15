@@ -1,0 +1,9 @@
+fun findRepeatedCharCounts(input: String): Map<Char, Int> {
+    return input.groupingBy { it }.eachCount().filter { it.value > 1 }
+}
+
+fun main() {
+    val input = "Hello World"
+    val repeatedCharCounts = findRepeatedCharCounts(input)
+    println("Repeated character counts: $repeatedCharCounts")
+}
