@@ -1,0 +1,20 @@
+import java.lang.StringBuilder
+
+fun main() {
+    val word = "Hello"
+    val reversedWord = reverseWord(word)
+    println("Original word: $word")
+    println("Reversed word: $reversedWord")
+}
+
+fun  reverseWord(input:String): String {
+    val stringBuilder = StringBuilder()
+
+    for (i in input.length -1 downTo 0){
+        stringBuilder.append(input[i])
+    }
+    return stringBuilder.toString()
+
+}
+
+
